@@ -1,0 +1,144 @@
+.contact-page {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  background: linear-gradient(to right, black, gray);
+  color: white;
+  padding: 60px 6%;
+}
+
+/* ===== MAIN SECTION ===== */
+
+.contact-container {
+  background: white;
+  color: #333;
+  display: flex;
+  padding: 60px 6%;
+  gap: 50px;
+}
+
+/* LEFT + RIGHT */
+
+.contact-left,
+.contact-right {
+  flex: 1;
+}
+
+/* ===== FORM ===== */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Row */
+.contact-form .row {
+  display: flex;
+  gap: 40px;
+}
+
+/* Inputs (Scoped properly) */
+.contact-form input,
+.contact-form textarea {
+  flex: 1;
+  padding: 16px 24px;
+  background: #ffffff;
+  border: 1px solid rgba(135, 135, 135, 0.36);
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+}
+
+.contact-form textarea {
+  height: 147px;
+  resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 138px;
+  height: 44px;
+  background: linear-gradient(
+    271.64deg,
+    #000000 3.19%,
+    rgba(24, 24, 24, 0.8) 100.37%
+  );
+  border-radius: 10px;
+  border: none;
+  color: #FAFAFA;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== CONTACT BUTTONS ===== */
+
+.contact-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.soft-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 6px 24px;
+  background: #EFEFEF;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.soft-btn:hover {
+  background: #e4e4e4;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .contact-container {
+    flex-direction: column;
+    padding: 40px 5%;
+    gap: 30px;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .soft-btn {
+    width: 100%;
+  }
+}
